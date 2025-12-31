@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Contact Us – Square Devise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contactez-nous – Square Devise</title>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
   <header>
-    <h1>Contact Us</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="PrivacyPolicy.html">Privacy Policy</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="delete-account.html">Delete Account</a>
-    </nav>
+    <div class="header-container">
+      <a href="index.html" class="logo">Square Devise</a>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="PrivacyPolicy.html">Confidentialité</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="delete-account.html">Supprimer le compte</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label for="name">Your Name</label>
-      <input id="name" name="name" required/>
 
-      <label for="email">Your Email</label>
-      <input id="email" name="email" type="email" required/>
+  <main>
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <h1>Contactez-nous</h1>
+      <p>Vous avez des questions ou des commentaires ? N'hésitez pas à nous écrire.</p>
+    </div>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Votre Nom</label>
+      <input id="name" name="name" type="text" placeholder="Jean Dupont" required/>
+
+      <label for="email">Votre Email</label>
+      <input id="email" name="email" type="email" placeholder="jean@exemple.com" required/>
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <textarea id="message" name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
 
-      <button type="submit">Send Message</button>
+      <button type="submit">Envoyer le message</button>
     </form>
   </main>
+
   <footer>
-    &copy; 2025 Square Devise
+    <p>&copy; 2025 Square Devise. Tous droits réservés.</p>
   </footer>
 </body>
 </html>

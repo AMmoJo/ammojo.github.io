@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Account Deletion - Square Devise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suppression de compte - Square Devise</title>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
   <header>
-    <h1>Request Account Deletion</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="PrivacyPolicy.html">Privacy Policy</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="delete-account.html">Delete Account</a>
-    </nav>
+    <div class="header-container">
+      <a href="index.html" class="logo">Square Devise</a>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="PrivacyPolicy.html">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+        <a href="delete-account.html" class="active">Supprimer le compte</a>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <p>To request the deletion of your Square Devise account and associated data, please click the link below to open our secure account deletion form.</p>
-    <p><a href="https://app.formbricks.com/s/qr530h6sj86kmd23ynl0gsuc" target="_blank" rel="noopener">Open Account Deletion Form</a></p>
-    <p><strong>Please note:</strong> Some of your data may be retained in our system for up to 30 days after your deletion request has been processed in accordance with our privacy policy.</p>
+    <section class="features-list" style="text-align: center;">
+      <h1>Demande de suppression de compte</h1>
+      <p>Pour demander la suppression de votre compte Square Devise et de toutes les données associées, veuillez cliquer sur le bouton ci-dessous pour ouvrir notre formulaire sécurisé.</p>
+      
+      <div style="margin: 30px 0;">
+        <a href="https://app.formbricks.com/s/qr530h6sj86kmd23ynl0gsuc" target="_blank" rel="noopener" class="cta-button" style="background-color: var(--danger-color);">
+          Ouvrir le formulaire de suppression
+        </a>
+      </div>
+      
+      <p style="font-size: 0.9rem; color: var(--text-color); max-width: 600px; margin: 0 auto;">
+        <strong>Remarque :</strong> Certaines de vos données peuvent être conservées dans notre système jusqu'à 30 jours après le traitement de votre demande, conformément à notre politique de confidentialité et aux lois sur la conservation des données.
+      </p>
+    </section>
   </main>
+
   <footer>
-    &copy; 2025 Square Devise
+    <p>&copy; 2025 Square Devise. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
